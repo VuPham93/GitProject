@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo bảng đơn giản</title>
+</head>
+<body>
+<style>
+    table {
+        font-family: "Times New Roman", sans-serif;
+        border: 2px solid black;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        padding: 5px;
+        text-align: left;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    tr:nth-child(even) {
+        background-color: #eee;
+    }
+    tr:nth-child(odd) {
+        background-color:#fff;
+    }
+    th {
+        background-color: black;
+        color: white;
+    }
+</style>
+<p><strong>Phần 1</strong></p>
+<table>
+    <caption><h2>Thời khóa biểu lớp T0909I</h2></caption>
+    <tr>
+        <td>Thứ 3</td>
+        <td>Thứ 5</td>
+        <td>Thứ 7</td>
+    </tr>
+    <tr>
+        <td>CF - T1, L1</td>
+        <td>CF - T2, L2</td>
+        <td>CF - T3, L3</td>
+    </tr>
+    <tr>
+        <td>CF - T4, L4</td>
+        <td>CF - Written Test</td>
+        <td>C - T1, L1</td>
+    </tr>
+</table>
+</body>
+</html>

@@ -3,39 +3,57 @@
     <meta charset="UTF-8">
     <title>Tạo form đơn giản</title>
 <body>
+<style>
+    table.mot {
+        padding-left: 20px;
+        padding-top: 10px;
+        font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+        background-color: white;
+    }
+    table.hai {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        font-family: Arial;
+        background-color: khaki;
+        width: 500px;
+        height: 300px;
+        text-align: left;
+    }
+</style>
+
+<h3>Phần 1:</h3>
+
 <form method="POST">
-    <table>
-        <tbody>
+    <table class="mot">
         <tr>
-            <th colspan="2">SỞ THÍCH CỦA BẠN</th>
+            <th style="background-color: coral; color: white" colspan="2">SỞ THÍCH CỦA BẠN</th>
         </tr>
         <tr>
-            <td style="text-align: right;">Họ và tên:</td>
-            <td style="text-align: left;"><input type="text" name="yourname"></td>
+            <td style="background-color: white: right; color: blue">Họ và tên:</td>
+            <td style="text-align: left; color: orange"><input type="text" name="yourname"></td>
         </tr>
         <tr>
-            <td style="text-align: right;">Email:</td>
-            <td style="text-align: left;"><input type="text" name="email"></td>
+            <td style="text-align: right; color: blue">Email:</td>
+            <td style="text-align: left; color: orange"><input type="text" name="email"></td>
         </tr>
         <tr>
-            <td style="text-align: right;">Sở thích:</td>
+            <td style="text-align: right; color: blue" valign="top">Sở thích:</td>
             <td>
                 <table>
-                    <tbody>
                     <tr>
-                        <td style="text-align: left;"><label><input name="hobby" value="1" type="checkbox"> Thể thao</label></td>
-                        <td style="text-align: left;"><label><input name="hobby" value="1" type="checkbox"> Âm nhạc</label></td>
-                        <td style="text-align: left;"><label><input name="hobby" value="1" type="checkbox"> Đọc sách</label></td>
+                        <td style="text-align: left; color: orange"><label><input name="hobby" value="1" type="checkbox"> Thể thao</label></td>
+                        <td style="text-align: left; color: orange"><label><input name="hobby" value="1" type="checkbox"> Âm nhạc</label></td>
+                        <td style="text-align: left; color: orange"><label><input name="hobby" value="1" type="checkbox"> Đọc sách</label></td>
                     </tr>
                     <tr>
-                        <td style="text-align: left;"><label><input name="hobby" value="1" type="checkbox"> Lướt web</label></td>
-                        <td style="text-align: left;"><label><input name="hobby" value="1" type="checkbox"> Chơi game</label></td>
-                        <td style="text-align: left;"><label><input name="hobby" value="1" type="checkbox"> Điện ảnh</label></td>
+                        <td style="text-align: left; color: orange"><label><input name="hobby" value="1" type="checkbox"> Lướt web</label></td>
+                        <td style="text-align: left; color: orange"><label><input name="hobby" value="1" type="checkbox"> Chơi game</label></td>
+                        <td style="text-align: left; color: orange"><label><input name="hobby" value="1" type="checkbox"> Điện ảnh</label></td>
                     </tr>
                     <tr>
-                        <td style="text-align: left;"><label><input name="hobby" value="1" type="checkbox"> Du lịch</label></td>
+                        <td style="text-align: left; color: orange"><label><input name="hobby" value="1" type="checkbox"> Du lịch</label></td>
                     </tr>
-                    </tbody>
                 </table>
             </td>
         </tr>
@@ -43,7 +61,56 @@
             <td ></td>
             <td style="text-align: left;" colspan="2"><input type="submit" value="Gửi thông tin"> <input type="reset" value="Nhập lại"></td>
         </tr>
-        </tbody></table>
+    </table>
+</form>
 
+<h3>Phần 2:</h3>
+<form method="POST">
+    <table class="hai">
+        <tr>
+            <th colspan="2"; style="color: blue; background-color: lightblue; font-size: 1.3em">ĐĂNG KÝ HỌC VIÊN</th>
+        </tr>
+        <tr>
+            <th style="color: blue; font-size: 0.98em">Họ và tên</th>
+            <td><input type="text" name="yourname" size="28px"></td>
+        </tr>
+        <tr>
+            <th style="color: blue; font-size: 0.98em">Ngày sinh</th>
+            <td><input type="date" name="date" size="15"></td>
+        </tr>
+        <tr>
+            <th style="color: blue; font-size: 0.98em">Giới tính</th>
+            <td><input type="radio" name="sex"/>Nam <input type="radio" name="sex"/>Nữ
+            </td>
+        </tr>
+        <tr>
+            <th style="color: blue; font-size: 0.98em">Địa chỉ</th>
+            <td><input style="height: 50px; width: 200px" type = "text" name="email"></td>
+        </tr>
+        <tr>
+            <th style="color: blue; font-size: 0.98em">Lớp</th>
+            <td>
+                <select name="class">
+                    <option value="">-Chọn Lớp-</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th style="color: blue; font-size: 0.98em">Email</th>
+            <td><input type = "text" name="email" size="20"/></td>
+        </tr>
+        <tr>
+            <th style="color: blue; font-size: 0.98em">Điện Thoại</th>
+            <td><input type = "text" name="phone" size="20"/></td>
+        </tr>
+        <tr>
+            <td ></td>
+            <td style="text-align: left;" colspan="2"><input type="submit" value="Đăng ký"> <input type="reset" value="Nhập lại"></td>
+        </tr>
+    </table>
 </form>
 </body></html>
